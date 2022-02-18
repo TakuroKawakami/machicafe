@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/*共通部分--------------------- */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* タイトル */
+.page-title {
+  font-size: 5rem;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  color: #eae0d9;
+  text-transform: uppercase;
+}
+
+/* サブタイトル */
+.sub-title {
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px #887570 solid;
+  font-weight: normal;
+}
+
+/* ボタン */
+.button {
+  font-size: 1.375rem;
+  background: #e5d2c6;
+  color: black;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #d0c0b4;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/*HEADER--------------------- */
+
+
+/* ロゴ */
+.logo {
+  width: 210px;
+  margin-top: 14px;
+}
+
+/* ナビゲーション */
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: #e5d2c6;
+}
+
+.main-nav a:hover {
+  color: #d0c0b4;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*footer--------------------- */
+
+footer {
+  background: #887676;
+  text-align: center;
+  padding: 26px 0;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/*HOME--------------------- */
+
+#home .page-title {
+  text-transform: none;
+}
+
+/* 背景画像 */
+#home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+}
+
+/* メイン */
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  margin: 10px 0 42px;
+  color: #eae0d9;
+}
+
+/*CONCEPT--------------------- */
+
+/* 背景画像 */
+#concept {
+  background-image: url(../images/concept-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+/* 見出し */
+#concept .page-title {
+  text-align: center;
+}
+
+/* 記事部分 */
+article {
+  width: 100%;
+  text-align: center;
+}
+
+article img {
+  margin-bottom: 1.5rem;
+}
+
+article h3 {
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+.concept-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/*MENU--------------------- */
+
+/* 背景画像 */
+#menu {
+  background-image: url(../images/menu-bg.jpg);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+/* 見出し */
+.menu-content {
+  max-width: 560px;
+}
+
+.menu-content .page-title {
+  text-align: center;
+}
+
+/* 記事部分 */
+
+.menu-list {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px
+}
+
+/*CONTACT--------------------- */
+
+#contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.form-font {
+  color: #eae0d9;
+}
+
+/* 店舗情報・地図 */
+#location {
+  padding: 4% 0;
+}
+
+.location-info {
+  width: 22%;
+}
+
+.location-info p {
+  padding: 12px 10px;
+}
+
+.location-map {
+  width: 74%;
+}
+
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*モバイル版--------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  /*HEADER--------------------- */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*HOME--------------------- */
+  .home-content {
+    margin-top: 20%;
+  }
+
+  .home-content p {
+    font-size: 1.25rem;
+  }
+  /*CONCEPT--------------------- */
+
+  #concept .page-title {
+    margin-top: 30px;
+  }
+
+  article {
+    width: 100%;
+  }
+  
+  .concept-contents {
+    flex-direction: column;
+  }
+
+  /*MENU--------------------- */
+  .menu-content {
+    margin-top: 30px;
+  }
+
+  /*CONTACT--------------------- */
+  #contact .page-title {
+    margin-top: 40px;
+  }
+
+  /* フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
+  }
+
+  /* 店舗情報・地図 */
+  .location-info,
+  .location-map {
+    width: 100%;
+  }
+
+  #location .wrapper {
+    flex-direction: column;
+  }
+}
